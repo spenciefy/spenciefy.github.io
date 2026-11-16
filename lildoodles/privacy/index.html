@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>lil doodles privacy policy · Spencer Yen</title>
+  <style>
+    :root { color-scheme: light; background: #faf8f2; color: #302c2b; font: 110%/1.65 system-ui, sans-serif; }
+    main { max-width: 41rem; margin: auto; padding: clamp(1.3rem, 5vw, 4rem) 1.3rem 4rem; }
+    h1, h2 { font-family: Georgia, serif; line-height: 1.18; text-wrap: balance; }
+    h1 { font-size: clamp(2rem, 6vw, 3.3rem); margin-bottom: .35rem; }
+    h2 { margin: 2rem 0 .5rem; }
+    p { margin: .5rem 0 1rem; }
+    a { color: #852348; text-underline-offset: .18em; }
+    time { color: #635b55; }
+  </style>
+</head>
+<body><main>
+  <h1>lil doodles privacy policy</h1>
+  <p>Effective <time datetime="2026-11-15">November 15, 2026</time></p>
+  <p>I’m Spencer Yen, the developer of lil doodles. Your collection lives on your device. When you make a doodle, the photo you picked or took goes to an online drawing service. Here’s what happens to it and what you can control.</p>
+
+  <h2>From photo to doodle</h2>
+  <p>The app sends a resized copy of the photo, its aspect ratio and your marker setting to my service on Cloudflare. The service sends the image and drawing instructions through OpenRouter to OpenAI, which generates the illustration. These services receive the contents of the image, including any people or identifying details visible in it. The app does not upload the rest of your camera roll.</p>
+  <p>Cloudflare hosts the drawing jobs and temporary image storage. My service deletes its input copy when processing finishes. Finished drawings are available for recovery for seven days from the start of the job. Server copies are scheduled for cleanup after that window. These periods describe my service’s storage. OpenRouter and OpenAI process requests under their own data policies, including any applicable security or abuse-monitoring retention.</p>
+
+  <h2>Your collection and location</h2>
+  <p>The app keeps your saved doodles, originals and available photo dates and places on your device. A place can come from an existing photo or, with your permission, from your location when you take a new one. The app can send coordinates to Apple’s geocoding service to look up a place name. Coordinates are not a separate input to the drawing model.</p>
+  <p>You can turn off auto-save in lil doodles Settings and change Camera, Photos or Location access in iOS Settings. If you save to Apple Photos, your iCloud Photos settings apply. If you share a doodle, it goes to the app or recipient you select.</p>
+
+  <h2>Sign-in, free doodles and purchases</h2>
+  <p>Sign in with Apple gives the service an app-specific identifier. The app does not request your name or email from Apple. My service uses that identifier and sign-in credentials to verify your account, grant the five free doodles once and keep your balance. Apple processes payments. My service receives transaction identifiers, product and refund information to deliver purchases and prevent duplicate charges to your doodle balance or duplicate grants. I do not receive your payment card number.</p>
+  <p>The service keeps account, purchase, balance and drawing-job records to operate your account, recover interrupted jobs and resolve purchase problems. Job records can remain after the image files expire.</p>
+
+  <h2>Usage analytics</h2>
+  <p>I use PostHog’s US service to understand which parts of the app work. Events include app activity, completing the welcome note or sign-in, opening the shop, starting or receiving a purchase, and submitting, recovering or saving a doodle. Events can include a pseudonymous app-installation identifier, device and app information, timestamps, and an approximate country derived by Cloudflare from your network connection. The app does not send PostHog your photos, precise coordinates or Apple sign-in identifier. Session recording is off. I do not sell personal information or use it for targeted advertising.</p>
+
+  <h2>Delete a doodle or your account</h2>
+  <p>Delete a doodle in the app to remove it and its saved original from your collection. Delete any separately saved copy in Apple Photos yourself. To stop sending photos for processing, stop starting drawings. You can continue browsing your saved collection.</p>
+  <p>To delete your account, open lil doodles Settings, choose <strong>Delete account</strong>, and confirm with Apple. The service cancels pending jobs, revokes Apple authorization and deletes the account, its unused balance, its drawing history and its server-held images. Cleanup retries if a service is unavailable. Your local collection stays on your phone.</p>
+  <p>After deletion, the service keeps transaction identifiers and a coded record that the free offer was claimed. These prevent purchases from being redeemed again and the welcome offer from being claimed twice. Analytics events use a separate installation identifier and are not automatically erased by deleting the Apple-linked account.</p>
+
+  <h2>Questions and privacy requests</h2>
+  <p>Email <a href="mailto:spencersyen@gmail.com">spencersyen@gmail.com</a> to ask about your data or request access, correction or deletion. Please describe the request without attaching personal photos. I may need to verify that a request relates to your account. I’ll post changes to this policy here and update its effective date.</p>
+</main></body>
+</html>
